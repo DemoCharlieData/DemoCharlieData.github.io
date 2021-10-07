@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="pppindex.css">
 
-    <style>
+    <pstyle>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-    </style>
+    </pstyle>
 
     <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -40,7 +40,7 @@
     // Following the script tag we are using Javascript.
     // One way to tell is to see how comments work...
     // First job is to set the chart as a JS variable:
-    var myChart1 = "chart2_ukProductivity.json";
+    var myChart1 = "chart1_covidUKRegions.json";
     // Now we simply insert it, using Vega's embed code:
     // The embed function needs to be told the location, and what to put there. 
     vegaEmbed('#firstChart', myChart1);
@@ -51,29 +51,40 @@
   <h3>Productivity puzzle</h3>
 
   <p>My second chart looks at productivity in the UK</p>
-
+    
 <div class="chart" id="secondChart">
   <script>
-    var myChart2 = "BankRate.json";
+    var myChart2 = "chart2_ukProductivity.json";
     vegaEmbed('#secondChart', myChart2);
   </script>
 </div>
     
- <p>This is my third chart, running from the UK Gov API.>
+    <h3>Bank rate</h3>
     
+    <p>This chart is pulled from the Rapid Charts example library.</p>
+
 <div class="chart" id="thirdChart">
   <script>
-    var myChart3 = "CovidCitiesAPI.json";
+    var myChart3 = "BankRate.json";
     vegaEmbed('#thirdChart', myChart3);
   </script>
 </div>
     
-<p>This is my fourth chart, with data hosted on GitHub.>
+ <p>This is my fourth chart, running from the UK Gov API.>
     
 <div class="chart" id="fourthChart">
   <script>
-    var myChart4 = "CovidCitiesStatic.json";
+    var myChart4 = "CovidCitiesAPI.json";
     vegaEmbed('#fourthChart', myChart4);
+  </script>
+</div>
+    
+<p>This is my fifth chart, with data hosted on GitHub.>
+    
+<div class="chart" id="fifthChart">
+  <script>
+    var myChart5 = "CovidCitiesStatic.json";
+    vegaEmbed('#fifthChart', myChart5);
   </script>
 </div>
     
